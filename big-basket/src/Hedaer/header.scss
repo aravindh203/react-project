@@ -1,0 +1,102 @@
+.header-container{
+    width: 85%;
+    margin: auto;
+    padding: 10px 0px;
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        .header-image{
+            width: 20%;
+            padding-left: 10px;
+        }
+        .header-content{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            .header-contact{
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                .header-contact-content{
+                    display: flex;
+                    .heaer-contact-icon{
+                        padding: 0px 10px;
+                        span{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .header-search{
+                width: 85%;
+                padding: 10px;
+                .header-input{
+                    width: 70%;
+                    position: relative;
+                    height: 100%;
+                    input{
+                        width: 100%;
+                        padding: 5px 10px;
+                        height: 100%;
+                        border: 1px solid #888;
+                    }
+                    button{
+                        background-color: #84c225;
+                        color: white;
+                        padding: 6px;
+                        font-size: 20px;
+                        border: none;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                    
+                }
+            }
+            .header-buy{
+                width: 15%;
+                background-color: #f2f2f2;
+                padding: 13px;
+                display: flex;
+                i{
+                    color: #da251d;
+                    font-size: 25px;
+                }
+                .header-icon-content{
+                    padding-left: 20px;
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        .header-bottom-dropdwon{
+            padding: 10px;
+            width: 20%;
+            background-color: #84c225;
+            p{
+                font-size: 15px;
+                color: white;
+            }
+        }
+        .header-bottom-offer{
+            width: 80%;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgrey;
+            svg{
+                font-size: 18px !important;
+                color: #da251d;
+            }
+            p{
+                padding-left: 5px;
+                font-size: 13px;
+            }
+        }
+    }
+}
