@@ -1,28 +1,22 @@
-import React from "react";
 import { createSlice } from "@reduxjs/toolkit";
+import { smartBasket } from "./AllData/smartBasket";
 
 const slice=createSlice({
     name:'products',
     initialState:{
-        products:[
-            {
-                "id": 1,
-                "product_name": "Capsicum - Green (Loose)",
-                "rate": [118.42,20.61,50.21],
-                "offer": 24,
-                "imageUrl": "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
-                "weight":['1 kg - Rs 57.50','250 g - Rs 14.40','500 g - Rs 29.00']
-            }
-        ]
+        products:smartBasket
     },
-    reducer:{
-        addToCart:(state,action)=>{
+    reducers:{
+        updatePrice:(state,action)=>{
+            var index=state.products.findIndex(value=>value.id=action.payload.id);
 
-        }
-
+            state.products[index].weight=state.products[index].weightPakages[action.payload.indexNo]
+            state.products[index].price=state.products[index].rate[action.payload.indexNo]
+            state.products[index].discountedPrice=state.products[index].dicountedRate[action.payload.indexNo]
+        },
     }
 
 })
 
-export const { addToCart }=slice.actions;
+export const { updatePrice,hello }=slice.actions;
 export default slice.reducer;
