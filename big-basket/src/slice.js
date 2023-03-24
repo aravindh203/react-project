@@ -4,19 +4,35 @@ import { smartBasket } from "./AllData/smartBasket";
 const slice=createSlice({
     name:'products',
     initialState:{
-        products:smartBasket
+        vegitables:smartBasket,
+        addToCart:[]
     },
     reducers:{
         updatePrice:(state,action)=>{
-            var index=state.products.findIndex(value=>value.id=action.payload.id);
-
-            state.products[index].weight=state.products[index].weightPakages[action.payload.indexNo]
-            state.products[index].price=state.products[index].rate[action.payload.indexNo]
-            state.products[index].discountedPrice=state.products[index].dicountedRate[action.payload.indexNo]
+            state[action.payload.key][action.payload.index].weight=state[action.payload.key][action.payload.index].weightPakages[action.payload.indexNo]
+            state[action.payload.key][action.payload.index].price=state[action.payload.key][action.payload.index].rate[action.payload.indexNo]
+            state[action.payload.key][action.payload.index].discountedPrice=state[action.payload.key][action.payload.index].dicountedRate[action.payload.indexNo]
+            state[action.payload.key][action.payload.index].addTocardAuthendication=action.payload.authendication;
         },
+        addToCart:(state,action)=>{
+            state.addToCart.push(action.payload.object);
+            state[action.payload.key][action.payload.index].addTocardAuthendication=true;
+            state[action.payload.key][action.payload.index].quantity=1;
+        },
+        updateQuantity:(state,action)=>{
+            state.addToCart[action.payload.index].quantity=action.payload.updatedValue;
+            state[action.payload.key][action.payload.mainIndex].quantity=action.payload.updatedValue;
+        },
+        updateQuantityValue:(state,action)=>{
+            state[action.payload.key][action.payload.index].quantity=state.addToCart[action.payload.quantityIndex].quantity
+        },
+        remove:(state,action)=>{
+            var removedBasket=state.addToCart.filter((value,index)=>index!==action.payload.index)
+            state.addToCart=removedBasket;
+            state[action.payload.key][action.payload.mainIndex].addTocardAuthendication=action.payload.authendication;
+        }
     }
-
 })
 
-export const { updatePrice,hello }=slice.actions;
+export const { updatePrice,addToCart,updateQuantity,updateQuantityValue,remove }=slice.actions;
 export default slice.reducer;

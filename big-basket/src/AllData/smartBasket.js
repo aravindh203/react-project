@@ -2,34 +2,39 @@
 export const smartBasket=[
     {
         id: 1,
+        category:'vegetables',
         productName: 'Capsicum - Green (Loose)',
         brandName:'Fresho',
         rate: [102.63,20.61,50.21],
         dicountedRate:[78,19.50,39],
         offer: 24,
-        price:50.21,
-        discountedPrice:39,
-        weight:'500 g - Rs 39.00',
+        price:102.63,
+        discountedPrice:78,
+        weight:'1 kg - Rs 78.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg',
         weightPakages:['1 kg - Rs 78.00','250 g - Rs 19.50','500 g - Rs 39.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 2,
+        category:'vegetables',
         productName: 'Carrot - Orange (Loose)',
         brandName:'Fresho',
         rate: [22.03,46.05,11.84],
         dicountedRate:[11.50,22.50,6],
         offer: 49,
-        price: 11.84,
-        discountedPrice: 6,
-        weight:'250 g -Rs 6.00',
+        price: 22.03,
+        discountedPrice: 11.50,
+        weight:'500 g - Rs 11.50',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000071_14-fresho-carrot-orange.jpg',
-        weightPakages:['500 g -Rs 11.50','1 kg -Rs 22.50','250 g -Rs 6.00'],
-        addTocardAuthendication:false
+        weightPakages:['500 g - Rs 11.50','1 kg - Rs 22.50','250 g - Rs 6.00'],
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 3,
+        category:'vegetables',
         productName: 'Cauliflower',
         brandName:'Frsho',
         rate: [],
@@ -40,10 +45,12 @@ export const smartBasket=[
         weight:'1 pc (approx. 400 to 600 g)',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg',
         weightPakages:[],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 4,
+        category:'vegetables',
         productName: 'Coriander Leaves',
         brandName:'Fresho',
         rate: [12.11,30.26,121.05],
@@ -51,13 +58,15 @@ export const smartBasket=[
         offer: 38,
         price: 12.11,
         discountedPrice: 7.50,
-        weight:'100 g -Rs 7.50',
+        weight:'100 g - Rs 7.50',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000326_14-fresho-coriander-leaves.jpg',
-        weightPakages:['100 g -Rs 7.50','250 g -Rs 18.00','1 kg -Rs 71.50'],
-        addTocardAuthendication:false
+        weightPakages:['100 g - Rs 7.50','250 g - Rs 18.00','1 kg - Rs 71.50'],
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 5,
+        category:'vegetables',
         productName: 'Ladies Fingers (Loose)',
         brandName:'Fresho',
         rate: [53.05,107.80,26.07],
@@ -68,24 +77,28 @@ export const smartBasket=[
         weight:'500 g - Rs 31.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000143_14-fresho-ladies-finger.jpg',
         weightPakages:['500 g - Rs 31.00','1 kg - Rs 61.50','250 g - Rs 15.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 6,
+        category:'vegetables',
         productName: 'Onion (Loose)',
         brandName:'Fresho',
         rate: [61.84,30.92,153.29],
         dicountedRate:[43,21.50,106],
         offer: 30,
-        price: 30.02,
-        discountedPrice: 21.50,
-        weight:'1 kg - Rs 21.50',
+        price: 61.84,
+        discountedPrice: 43,
+        weight:'2 kg - Rs 43.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40075537_5-fresho-onion.jpg',
         weightPakages:['2 kg - Rs 43.00','1 kg - Rs 21.50','5 kg - Rs 106.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 7,
+        category:'vegetables',
         productName: 'Tomato - Hybrid (Loose)',
         brandName:'Fresho',
         rate: [35.53,17.76],
@@ -96,10 +109,12 @@ export const smartBasket=[
         weight:'1 kg - Rs 27.00',
         imageUrl: '	https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg',
         weightPakages:['1 kg - Rs 27.00','500 g - Rs 13.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 8,
+        category:'vegetables',
         productName: 'Tomato - Local (Loose)',
         brandName:'Fresho',
         rate: [38.16,19.08],
@@ -110,24 +125,28 @@ export const smartBasket=[
         weight:'1 kg - Rs 29.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000203_16-fresho-tomato-local.jpg',
         weightPakages:['1 kg - Rs 29.00','500 g - Rs 14.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 9,
+        category:'vegetables',
         productName: 'Beans - Haricot (Loose)',
         brandName:'Fresho',
         rate: [112.42,59.21,20.61],
         dicountedRate:[90,45,22.50],
         offer: 24,
-        price: 59.21,
-        discountedPrice: 45,
-        weight:'500 g - Rs 45.00',
+        price: 112.42,
+        discountedPrice: 90,
+        weight:'1 kg - Rs 90.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40089743_2-fresho-beans-haricot.jpg',
         weightPakages:['1 kg - Rs 90.00','500 g - Rs 45.00','250 g - Rs 22.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 10,
+        category:'vegetables',
         productName: 'Atta/Godihittu - Whole Wheat',
         brandName:'Aashirvaad',
         rate: [576,318,125,67],
@@ -138,10 +157,12 @@ export const smartBasket=[
         weight:'10 kg - Rs 460.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/30006887_7-aashirvaad-atta-whole-wheat.jpg',
         weightPakages:['10 kg - Rs 460.00','5 kg - Rs 275.00','2 kg - Rs 118.00','1 kg - Rs 63.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 11,
+        category:'vegetables',
         productName: 'Vacuum Evaporated Iodised Salt - Helps Mental Development',
         brandName:'Tata Salt',
         rate: [],
@@ -152,10 +173,12 @@ export const smartBasket=[
         weight:'1 kg Pouch',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/241600_7-tata-salt-iodized.jpg',
         weightPakages:[],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 12,
+        category:'vegetables',
         productName: 'Fortune',
         brandName:'Fortune',
         rate: [],
@@ -166,38 +189,44 @@ export const smartBasket=[
         weight:'1 L Pouch - Rs 139.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/274145_14-fortune-sun-lite-sunflower-refined-oil.jpg',
         weightPakages:[],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 13,
+        category:'vegetables',
         productName: 'Cumin/Jeera/Jeerige - Whole',
         brandName:'BB Royal',
         rate: [1000,500,50,200,100],
         dicountedRate:[446,228,25,93,48],
         offer: 52,
-        price: 200,
-        discountedPrice: 93,
-        weight:'1 L Pouch - Rs 139.00',
+        price: 1000,
+        discountedPrice: 446,
+        weight:'1 kg - Rs 446.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000479_13-bb-royal-cuminjeera-whole.jpg',
         weightPakages:['1 kg - Rs 446.00','500 g Pouch - Rs 228.00','50 g - Rs 25.00','200 g Pouch - Rs 93.00','100 g Pouch - Rs 48.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 14,
+        category:'vegetables',
         productName: 'Sona Masoori Raw Rice/Akki - Super Premium, 12 + Months Old',
         brandName:'BB Royal',
         rate: [375,750,1875,75],
         dicountedRate:[298,593,1479,63],
         offer: 21,
-        price: 1875,
-        discountedPrice: 1479,
-        weight:'25 kg Bag - Rs 1479.00',
+        price: 375,
+        discountedPrice: 298,
+        weight:'5 kg Bag - Rs 298.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/10000479_13-bb-royal-cuminjeera-whole.jpg',
         weightPakages:['5 kg Bag - Rs 298.00','10 kg Bag - Rs 593.00','25 kg Bag - Rs 1479.00','1 kg Bag - Rs 63.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 15,
+        category:'vegetables',
         productName: 'Sugar/Sakkare',
         brandName:'BB Popular',
         rate: [275,55,110],
@@ -208,10 +237,12 @@ export const smartBasket=[
         weight:'5 kg - Rs 219.00',
         imageUrl: '	https://www.bigbasket.com/media/uploads/p/s/40019397_10-bb-popular-sugar.jpg',
         weightPakages:['5 kg - Rs 219.00','1 kg - Rs 45.00','2 kg - Rs 89.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 16,
+        category:'vegetables',
         productName: 'Organic Black Pepper/Kari Menasui',
         brandName:'BB Royal',
         rate: [120,230,60,549],
@@ -222,38 +253,44 @@ export const smartBasket=[
         weight:'100 g - Rs 98.00',
         imageUrl: '	https://www.bigbasket.com/media/uploads/p/s/40168521_6-bb-royal-organic-black-pepperkali-mirchi.jpg',
         weightPakages:['100 g - Rs 98.00','200 g - Rs 195.00','50 g - Rs 51.00','500 g - Rs 468.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 17,
+        category:'vegetables',
         productName: 'Organic - Raw Peanuts/Kadalekayi',
         brandName:'BB Royal',
         rate: [126,249],
         dicountedRate:[98,189],
         offer: 24,
-        price: 249,
-        discountedPrice: 189,
-        weight:'1 kg - Rs 189.00',
+        price: 126,
+        discountedPrice: 98,
+        weight:'500 g - Rs 98.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/40094998_10-bb-royal-organic-raw-peanuts.jpg',
         weightPakages:['500 g - Rs 98.00','1 kg - Rs 189.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 18,
+        category:'vegetables',
         productName: 'Phool Makhana',
         brandName:'BB Popular',
         rate: [60,120],
         dicountedRate:[41,79],
         offer: 34,
-        price: 120,
-        discountedPrice: 79,
-        weight:'100 g Pouch - Rs 79.00',
+        price: 60,
+        discountedPrice: 41,
+        weight:'50 g Pouch - Rs 41.00',
         imageUrl: '	https://www.bigbasket.com/media/uploads/p/s/40133681_5-bb-popular-phool-makhana.jpg',
         weightPakages:['50 g Pouch - Rs 41.00','100 g Pouch - Rs 79.00'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 19,
+        category:'vegetables',
         productName: 'Cheese Slices - Rich In Protein, Wholesome, No Added Sugar',
         brandName:'Amul',
         rate: [140,410,78],
@@ -264,21 +301,24 @@ export const smartBasket=[
         weight:'200 g (10 Slices) - Rs 127.00',
         imageUrl: '	https://www.bigbasket.com/media/uploads/p/s/104808_9-amul-cheese-slices.jpg',
         weightPakages:['200 g (10 Slices) - Rs 127.00','750 g (50 Slices) - Rs 396.00','100 g (5 Slices) - Rs 73.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     },
     {
         id: 20,
+        category:'vegetables',
         productName: 'Pasteurised Butter',
         brandName:'Amul',
         rate: [275,56],
         dicountedRate:[266,53.50],
         offer: 4,
-        price: 56,
-        discountedPrice: 53.50,
-        weight:'100 g Carton - Rs 53.50',
+        price: 276,
+        discountedPrice: 266,
+        weight:'500 g Carton - Rs 266.00',
         imageUrl: 'https://www.bigbasket.com/media/uploads/p/s/104860_8-amul-butter-pasteurised.jpg',
         weightPakages:['500 g Carton - Rs 266.00','100 g Carton - Rs 53.50'],
-        addTocardAuthendication:false
+        addTocardAuthendication:false,
+        quantity:1
     }
 
 ]

@@ -10,17 +10,15 @@ import { BrowserRouter,Routes,Route,Navigate } from "react-router-dom";
 import { Provider } from "react-redux";
 import { stores } from "./store";
 
-
 const Redux = () =>{
     return(
         <>
            <Provider store={stores}>
                 <Routing/>
-            </Provider> 
+           </Provider> 
         </>
     );
 }
-
 
 const Main = () =>{
     return(
@@ -39,7 +37,7 @@ const Routing = () =>{
                 <Header/>
                 <Routes>
                     <Route path='/' element={<Main/>} />
-                    <Route path='/details' element={<Details/>} />
+                    <Route path='/details/:key/:index' element={<Details/>} />
                     <Route path='/allProducts' element={<AllProducts/>} />
                     <Route path='*' element={<Navigate to={'/'} />}/>
                 </Routes>
